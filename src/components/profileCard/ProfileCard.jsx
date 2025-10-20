@@ -34,7 +34,7 @@ function ProfileCard() {
         </NavLink>
 
         <NavLink
-          to="/dashboard/teachers"
+          to="/studentDashboard/studentTeachers"
           className={({ isActive }) => `nav-item ${isActive ? "active" : ""}`}
         >
           Teachers

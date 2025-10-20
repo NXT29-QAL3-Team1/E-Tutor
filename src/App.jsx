@@ -30,7 +30,7 @@ import Career from './pages/mainPages/career/Career';
 // Pages (Student)
 import StudentDashboard from './pages/studentPages/studentDashboard/StudentDashboard';
 import StudentCourses from './pages/studentPages/studentCourses/StudentCourses';
-
+import StudentTeachers from './pages/studentPages/studentTeachers/StudentTeachers';
 // Pages (Instructor)
 // Soon
 
@@ -51,6 +51,7 @@ const router = createBrowserRouter(
         <Route path="studentDashboard" element={<StudentDashRoot />} >
           <Route index element={<StudentDashboard />} />
           <Route path="studentCourses" element={<StudentCourses />} />
+          <Route path="studentTeachers" element={<StudentTeachers />} />
         </Route>
       </Route>
 
