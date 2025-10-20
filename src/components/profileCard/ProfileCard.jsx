@@ -41,7 +41,7 @@ function ProfileCard() {
         </NavLink>
 
         <NavLink
-          to="/dashboard/wishlist"
+          to="/studentDashboard/studentWishlist"
           className={({ isActive }) => `nav-item ${isActive ? "active" : ""}`}
         >
           Wishlist
