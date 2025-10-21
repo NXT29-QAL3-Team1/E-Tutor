@@ -4,7 +4,7 @@ import { wishlistData } from "./wishlistData";
 
 function StudentWishlist() {
   return (
-    <div id="wishlist-page" className="page-content">
+    <div id="wishlist-page" className="page-content container">
       <section className="wishlist-section">
         <h1 className="section-title">Wishlist ({wishlistData.length})</h1>
 

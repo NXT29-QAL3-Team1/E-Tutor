@@ -4,7 +4,7 @@ import TeacherCard from '../../../components/teacherCard/TeacherCard';
 
 function StudentTeachers() {
   return (
-    <div id="teachers-page" className="page-content">
+    <div id="teachers-page" className="page-content container">
       <section className="instructors-section">
         <h1 className="section-title">
           Instructors ({teachersData.length})
