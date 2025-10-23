@@ -72,13 +72,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     margin-top: 40px;
 }
 
 .pagination-btn {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background: white;
@@ -97,8 +97,8 @@
 }
 
 .page-number {
-    width: 40px;
-    height: 40px;
+    width: 33px;
+    height: 33px;
     border: 1px solid #ddd;
     border-radius: 50%;
     background: white;
@@ -129,25 +129,24 @@
     .courses-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .search-sort-bar {
         flex-direction: column;
         align-items: stretch;
         gap: 15px;
     }
-    
+
     .search-container,
     .sort-container {
         justify-content: space-between;
     }
-    
+
     .search-input {
         width: 100%;
         min-width: 250px;
     }
-    
+
     .pagination {
         flex-wrap: wrap;
-        gap: 8px;
     }
 }

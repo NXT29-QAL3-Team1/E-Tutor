@@ -2,7 +2,7 @@
 import FilterSidebar from "../../../components/FilterSidebar";
 import FilterHeader from "../../../components/FilterHeader";
 import CourseDetailsCard from "../../../components/CourseDetailsCard";
-import Slider from "../../../components/Slider";
+import Pagination from '../../../components/Pagination';
 
 // MUI Components
 import { Box } from "@mui/material";
@@ -38,7 +38,7 @@ export default function Courses() {
                             ))
                         }
                     </Box>
-                    <Slider />
+                    <Pagination />
                 </Box>
             </Box>
         </div>
