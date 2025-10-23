@@ -34,7 +34,8 @@ export default function CourseCard({
                 borderRadius: 3,
                 boxShadow: 3,
                 overflow: 'hidden',
-                cursor: "pointer"
+                cursor: "pointer",
+                padding: 0,
             }}
             onClick={() => {
                 navigate(`/courses/${id}`)

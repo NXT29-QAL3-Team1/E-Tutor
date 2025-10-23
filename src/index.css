@@ -24,6 +24,10 @@
     background-color: var(--grey-100);
 }
 
+h1 {
+    margin: 0;
+}
+
 /* end general styling */
 
 /* .app {

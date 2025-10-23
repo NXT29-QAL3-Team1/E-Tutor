@@ -22,10 +22,10 @@ import AuthenticationRoot from './pages/roots/authRoot/AuthenticationRoot'
 import Home from './pages/mainPages/home/Home';
 import Courses from './pages/mainPages/courses/Courses';
 import CourseDetails from './pages/mainPages/courseDetails/CourseDetails';
-import Category from './pages/mainPages/category/Category';
 import About from './pages/mainPages/about/About';
-import Contact from './pages/mainPages/contact/Contact';
-import Career from './pages/mainPages/career/Career';
+import Help from './pages/mainPages/help/Help';
+import InstructorInfo from './pages/mainPages/instructorInfo/InstructorInfo';
+import CourseContent from './pages/mainPages/courseContent/CourseContent';
 
 // Pages (Student)
 import StudentDashboard from './pages/studentPages/studentDashboard/StudentDashboard';
@@ -42,12 +42,12 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<MainRoot />}>
         <Route index element={<Home />} />
-        <Route path="category" element={<Category />} />
         <Route path="courses" element={<Courses />} />
         <Route path="courses/:id" element={<CourseDetails />} />
+        <Route path="courses/:id/content" element={<CourseContent />} />
+        <Route path="instructorInfo/:id" element={<InstructorInfo />} />
         <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="career" element={<Career />} />
+        <Route path="help" element={<Help />} />
         <Route path="studentDashboard" element={<StudentDashRoot />} >
           <Route index element={<StudentDashboard />} />
           <Route path="studentCourses" element={<StudentCourses />} />

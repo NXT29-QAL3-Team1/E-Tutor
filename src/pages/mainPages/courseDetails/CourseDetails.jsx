@@ -38,6 +38,8 @@ import {
 // Reusable Components
 import RelatedCoursesHeader from '../../../components/RelatedCoursesHeader';
 import CourseDetailsCard from '../../../components/CourseDetailsCard';
+import Reviews from "../../../components/reviews/Reviews";
+import VideoPlayer from '../../../components/VideoPlayer';
 
 // Hooks
 import { useState } from 'react';
@@ -45,11 +47,16 @@ import { useState } from 'react';
 // Course Data
 import courseInfo from "./courseInfo";
 
-export default function CourseDetails() {
+// React Router
+import { useNavigate } from "react-router-dom";
+
+export default function CourseDetails({ id = 1 }) {
 
     const isSmall = useMediaQuery("(max-width:992px)");
 
     const [readMore, setReadMore] = useState(false);
+
+    const navigate = useNavigate();
 
     return (
         <Box className="container" sx={{ py: 4, bgcolor: "background.default" }}>
@@ -90,6 +97,12 @@ export default function CourseDetails() {
                                 alignItems="center"
                                 spacing={1}
                                 key={i}
+                                sx={{
+                                    cursor: "pointer",
+                                }}
+                                onClick={() => {
+                                    navigate(`/instructorInfo/${id}`)
+                                }}
                             >
                                 <Avatar
                                     src={c.img}
@@ -99,9 +112,6 @@ export default function CourseDetails() {
                                 <Typography variant="body2" fontWeight={500}>
                                     {c.name}
                                 </Typography>
-                                {i === 0 && (
-                                    <Typography variant="body2">+</Typography>
-                                )}
                             </Stack>
                         ))}
                     </Stack>
@@ -127,19 +137,7 @@ export default function CourseDetails() {
                         </Typography>
                     </Stack>
 
-                    <Box
-                        component="video"
-                        src={courseInfo.course.videoURL}
-                        controls
-                        muted
-                        sx={{
-                            width: "100%",
-                            borderRadius: 2,
-                            mt: 3,
-                            boxShadow: 2,
-                            objectFit: "cover",
-                        }}
-                    />
+                    <VideoPlayer/>
 
                     <Box sx={{ mt: 4 }}>
                         <Typography
@@ -311,21 +309,33 @@ export default function CourseDetails() {
                                 alignItems={"center"}
                             >
                                 <Avatar
+                                    onClick={() => {
+                                        navigate(`/instructorInfo/${id}`)
+                                    }}
+
                                     src={courseInfo.instructor.image}
-                                    sx={{ width: 90, height: 90, borderRadius: "50%" }}
+                                    sx={{ cursor: "pointer", width: 90, height: 90, borderRadius: "50%" }}
                                 />
 
                                 <Box>
-                                    <Typography variant="h6" fontWeight={700}
+                                    <Typography
+
+                                        onClick={() => {
+                                            navigate(`/instructorInfo/${id}`)
+                                        }} variant="h6" fontWeight={700}
                                         sx={{
-                                            textAlign: { xs: "center", md: "left" }
+                                            cursor: "pointer", textAlign: { xs: "center", md: "left" }
                                         }}
                                     >
                                         {courseInfo.instructor.name}
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary"
+                                    <Typography
+
+                                        onClick={() => {
+                                            navigate(`/instructorInfo/${id}`)
+                                        }} variant="body2" color="text.secondary"
                                         sx={{
-                                            textAlign: { xs: "center", md: "left" },
+                                            cursor: "pointer", textAlign: { xs: "center", md: "left" },
                                             mb: 2
                                         }}
                                     >
@@ -433,66 +443,16 @@ export default function CourseDetails() {
                         </Stack>
 
                         {/* ========== Student Feedback ========== */}
-                        <Stack
-                            direction={{ xs: "column", sm: "row" }}
-                            alignItems={{ xs: "flex-start", sm: "center" }}
-                            justifyContent="space-between"
-                            sx={{ mb: 2 }}
-                            rowGap={1}
-                        >
-                            <Typography variant="h5" fontWeight={700}>
-                                Students Feedback
-                            </Typography>
-
-                            <Select size="small" defaultValue="5 Star Rating">
-                                <MenuItem value="5 Star Rating">5 Star Rating</MenuItem>
-                                <MenuItem value="4 Star Rating">4 Star Rating</MenuItem>
-                                <MenuItem value="3 Star Rating">3 Star Rating</MenuItem>
-                            </Select>
-                        </Stack>
-
-                        <Stack spacing={3}>
-                            {courseInfo.feedbacks.map((f, i) => (
-                                <Card key={i} variant="outlined">
-                                    <CardContent>
-                                        <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 1 }}>
-                                            <Avatar src={f.avatar} />
-                                            <Box>
-                                                <Typography fontWeight={600}>{f.name}</Typography>
-                                                <Typography variant="caption" color="text.secondary">
-                                                    {f.time}
-                                                </Typography>
-                                            </Box>
-                                        </Stack>
-
-                                        <Rating
-                                            name="feedback-rating"
-                                            value={f.rating}
-                                            readOnly
-                                            size="small"
-                                        />
-                                        <Typography variant="body2" sx={{ mt: 1, lineHeight: 1.6 }}>
-                                            {f.comment}
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            ))}
-                        </Stack>
-
-                        <Box textAlign="center" sx={{ mt: 3 }}>
-                            <Button variant="outlined" color="warning">
-                                Load More
-                            </Button>
-                        </Box>
+                        <Reviews />
                     </Box>
                     <RelatedCoursesHeader />
                     <Stack mt={2} direction={"row"} flexWrap={"wrap"} gap={3} justifyContent={"center"} alignItems={"center"}>
-                            <CourseDetailsCard id={2}/>
-                            <CourseDetailsCard id={2}/>
-                            <CourseDetailsCard id={2}/>
-                            <CourseDetailsCard id={2}/>
-                            <CourseDetailsCard id={2}/>
-                            <CourseDetailsCard id={2}/>
+                        <CourseDetailsCard id={2} />
+                        <CourseDetailsCard id={2} />
+                        <CourseDetailsCard id={2} />
+                        <CourseDetailsCard id={2} />
+                        <CourseDetailsCard id={2} />
+                        <CourseDetailsCard id={2} />
                     </Stack>
                 </Box>
 
@@ -549,8 +509,11 @@ export default function CourseDetails() {
                                 color="primary"
                                 size="large"
                                 fullWidth
+                                onClick={()=>{
+                                    navigate("content");
+                                }}
                             >
-                                Buy Now
+                                Overview
                             </Button>
                             <Button variant="outlined" fullWidth>
                                 Add to Wishlist
