@@ -20,6 +20,7 @@ export default function RelatedCoursesHeader() {
                     gap: 2,
                     width: "100%",
                     py: 1,
+                    bgcolor:"white",
                 }}
             >
                 <Typography

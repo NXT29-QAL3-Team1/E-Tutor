@@ -16,22 +16,22 @@ export const instructorNav = [
     },
     {
         title: "Create New Course",
-        path: "/createCourse",
+        path: "/instructorDashboard/createCourse",
         icon: <AddCircleOutlineOutlined />
     },
     {
         title: "My Courses",
-        path: "/instructorCourses",
+        path: "/instructorDashboard/instructorCourses",
         icon: <LayersOutlined />
     },
     {
         title: "Earning",
-        path: "/earning",
+        path: "/instructorDashboard/earning",
         icon: <CreditCardOutlined />
     },
     {
         title: "Settings",
-        path: "/instructorSettings",
+        path: "/instructorDashboard/instructorSettings",
         icon: <SettingsOutlined />
     },
 ]

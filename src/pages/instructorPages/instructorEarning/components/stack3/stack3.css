@@ -1,0 +1,13 @@
+.instructorEarnGrid3 {
+    display: grid;
+    grid-template-columns: 1.8fr 2fr;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: start;
+}
+
+@media (max-width: 992px) {
+    .instructorEarnGrid3 {
+        grid-template-columns: 1fr;
+    }
+}

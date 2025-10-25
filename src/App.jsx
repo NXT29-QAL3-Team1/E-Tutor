@@ -32,8 +32,13 @@ import StudentDashboard from './pages/studentPages/studentDashboard/StudentDashb
 import StudentCourses from './pages/studentPages/studentCourses/StudentCourses';
 import StudentTeachers from './pages/studentPages/studentTeachers/StudentTeachers';
 import StudentWishlist from './pages/studentPages/studentWishlist/StudentWishlist';
+
 // Pages (Instructor)
-// Soon
+import InstructorDashboard from './pages/instructorPages/instructorDashboard/InstructorDashboard';
+import CreateCourse from './pages/instructorPages/createCourse/CreateCourse';
+import InstructorCourses from './pages/instructorPages/instructorCourses/InstructorCourses';
+import InstructorEarning from './pages/instructorPages/instructorEarning/InstructorEarning';
+import InstructorSettings from './pages/instructorPages/instructorSettings/InstructorSettings';
 
 // Error Page
 import Error from './pages/mainPages/error/Error';
@@ -63,7 +68,11 @@ const router = createBrowserRouter(
       </Route>
 
       <Route path="instructorDashboard" element={<InstructorDashRoot />}>
-
+        <Route index element={<InstructorDashboard />} />
+        <Route path="createCourse" element={<CreateCourse />} />
+        <Route path="instructorCourses" element={<InstructorCourses />} />
+        <Route path="earning" element={<InstructorEarning />} />
+        <Route path="instructorSettings" element={<InstructorSettings setProfileImage={undefined} />} />
       </Route>
 
       <Route path="*" element={<Error />} />

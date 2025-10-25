@@ -16,9 +16,7 @@ import {
     ListItem,
     ListItemText,
     ListItemIcon,
-    MenuItem,
     LinearProgress,
-    Select,
     useMediaQuery
 } from "@mui/material";
 
@@ -40,6 +38,7 @@ import RelatedCoursesHeader from '../../../components/RelatedCoursesHeader';
 import CourseDetailsCard from '../../../components/CourseDetailsCard';
 import Reviews from "../../../components/reviews/Reviews";
 import VideoPlayer from '../../../components/VideoPlayer';
+import RatingPaper from '../../../components/RatingPaper';
 
 // Hooks
 import { useState } from 'react';
@@ -137,7 +136,7 @@ export default function CourseDetails({ id = 1 }) {
                         </Typography>
                     </Stack>
 
-                    <VideoPlayer/>
+                    <VideoPlayer />
 
                     <Box sx={{ mt: 4 }}>
                         <Typography
@@ -404,15 +403,7 @@ export default function CourseDetails({ id = 1 }) {
                             justifyContent="space-between"
                             sx={{ mb: 5 }}
                         >
-                            <Stack alignItems="center" justifyContent="center">
-                                <Typography variant="h3" fontWeight={700}>
-                                    4.8
-                                </Typography>
-                                <Rating value={4.8} precision={0.1} readOnly />
-                                <Typography variant="body2" color="text.secondary">
-                                    Course Rating
-                                </Typography>
-                            </Stack>
+                            <RatingPaper />
 
                             <Box sx={{ flex: 1, width: "100%" }}>
                                 {courseInfo.ratings.map((r) => (
@@ -509,7 +500,7 @@ export default function CourseDetails({ id = 1 }) {
                                 color="primary"
                                 size="large"
                                 fullWidth
-                                onClick={()=>{
+                                onClick={() => {
                                     navigate("content");
                                 }}
                             >

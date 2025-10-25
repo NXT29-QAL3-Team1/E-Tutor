@@ -37,19 +37,20 @@ import {
 
 // Reusable Components
 import Logo from '../../../components/Logo';
+import InstructorFooter from '../../../components/instructorFooter/InstructorFooter';
 
 // Nav Data
 import { instructorNav } from './instructorNav';
 
 // React Router
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 const drawerWidth = 240;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
     ({ theme }) => ({
         flexGrow: 1,
-        padding: theme.spacing(3),
+        padding: theme.spacing(4),
         transition: theme.transitions.create('margin', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -104,8 +105,11 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 export default function InstructorDashRoot() {
+
+    const navigate = useNavigate();
+
     const theme = useTheme();
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
 
     const isSmall = useMediaQuery("(max-width:767px)");
     const isverySmall = useMediaQuery("(max-width:400px)");
@@ -121,7 +125,7 @@ export default function InstructorDashRoot() {
     };
 
     return (
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: 'flex', backgroundColor: "#E9EAF0" }}>
             <CssBaseline />
             <AppBar position="fixed"
                 // @ts-ignore
@@ -241,28 +245,38 @@ export default function InstructorDashRoot() {
                 </DrawerHeader>
                 <Divider />
                 <List>
-                    {instructorNav.map((item, index) => (
-                        <ListItem key={index} disablePadding
-                            sx={{ backgroundColor: item.path === location.pathname ? theme.palette.primary.main : "" }}
-                        >
-                            <ListItemButton>
-                                <ListItemIcon sx={{
-                                    color: item.path === location.pathname ? "white " : "#8C94A3",
-                                    justifyContent: "center"
-                                }}>
-                                    {item.icon}
-                                </ListItemIcon>
-                                <ListItemText primary={item.title} sx={{ color: item.path === location.pathname ? "white " : "#8C94A3" }} />
-                            </ListItemButton>
-                        </ListItem>
-                    ))}
+                    {instructorNav.map((item, index) => {
+                        return (
+                            <ListItem key={index} disablePadding
+                                sx={{ backgroundColor: item.path === location.pathname ? theme.palette.primary.main : "" }}
+                            >
+                                <ListItemButton
+                                    onClick={() => {
+                                        navigate(item.path);
+                                        setOpen(false);
+                                    }}
+                                >
+                                    <ListItemIcon sx={{
+                                        color: item.path === location.pathname ? "white " : "#8C94A3",
+                                        justifyContent: "center"
+                                    }}>
+                                        {item.icon}
+                                    </ListItemIcon>
+                                    <ListItemText primary={item.title} sx={{ color: item.path === location.pathname ? "white " : "#8C94A3" }} />
+                                </ListItemButton>
+                            </ListItem>
+                        )
+                    })}
                 </List>
             </Drawer>
             <Main
                 // @ts-ignore
                 open={open}>
                 <DrawerHeader />
-                <Outlet />
+                <Box sx={{ marginTop: { xs: "56px", sm: "75px", md: "35px" } }}>
+                    <Outlet />
+                </Box>
+                <InstructorFooter />
             </Main>
         </Box >
     );
