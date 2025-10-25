@@ -165,8 +165,7 @@ function DrawerAppBar() {
                         navigate("/coursesCart");
                     }}>
                     <ShoppingCartOutlined fontSize="medium" />
-                    <CartBadge badgeContent={0} color='warning' overlap="circular" sx={{
-                    }} />
+                    <CartBadge badgeContent={0} color='warning' overlap="circular" />
                 </IconButton>
             </Stack>
             <Divider />

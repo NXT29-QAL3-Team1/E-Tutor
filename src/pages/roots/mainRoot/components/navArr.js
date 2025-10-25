@@ -5,8 +5,8 @@ const navArr = [
     { title: "Courses", path: "/courses" },
     { title: "About", path: "/about" },
     { title: "Help", path: "/help" },
-    // { title: "Dashboard", path: "/instructorDashboard" },
-    { title: "Dashboard", path: "/studentDashboard" },
+    { title: "Dashboard1", path: "/studentDashboard" },
+    { title: "Dashboard2", path: "/instructorDashboard" },
 ];
 
 export default navArr;
