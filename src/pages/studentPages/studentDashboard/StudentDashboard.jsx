@@ -1,15 +1,24 @@
-import DashboardInfo from '../../../components/studentdashInfo/DashboardInfo';
+import DashboardInfo from '../../../components/dashboardInfo/DashboardInfo';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import courses from './courses';
 import Card from '../../../components/cards/Card';
 
-import './dashboard.css';
+import './studentDashboard.css';
 
 export default function StudentDashboard() {
     return (
         <div className="container">
-            <DashboardInfo />
+            <section className="dashboard-section">
+                <h1 className="section-title">Dashboard</h1>
+
+                <div className="stats-grid">
+                    <DashboardInfo />
+                    <DashboardInfo />
+                    <DashboardInfo />
+                    <DashboardInfo />
+                </div>
+            </section>
             <div className="section-header">
                 <h1 className="section-title">Let's start learning, Kevin</h1>
                 <div className="navigation-buttons">

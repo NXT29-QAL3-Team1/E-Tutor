@@ -5,8 +5,7 @@ const courseInfo = {
         subtitle:
             "3 in 1 Course: Learn to design websites with Figma, build with Webflow, and make a living freelancing.",
         creators: [
-            { name: "Dianne Russell", img: "https://i.pravatar.cc/100?img=1" },
-            { name: "Kristin Watson", img: "https://i.pravatar.cc/100?img=2" },
+            { name: "Vako Shvili", img: "https://i.pravatar.cc/150?img=12" },
         ],
         rating: 4.8,
         totalRatings: "451,444",
