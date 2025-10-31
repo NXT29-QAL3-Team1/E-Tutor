@@ -32,6 +32,7 @@ import StudentDashboard from './pages/studentPages/studentDashboard/StudentDashb
 import StudentCourses from './pages/studentPages/studentCourses/StudentCourses';
 import StudentTeachers from './pages/studentPages/studentTeachers/StudentTeachers';
 import StudentWishlist from './pages/studentPages/studentWishlist/StudentWishlist';
+import SettingsStudent from './pages/studentPages/studentSettings/SettingsStudent';
 // Pages (Instructor)
 // Soon
 
@@ -54,6 +55,7 @@ const router = createBrowserRouter(
           <Route path="studentCourses" element={<StudentCourses />} />
           <Route path="studentTeachers" element={<StudentTeachers />} />
           <Route path="studentWishlist" element={<StudentWishlist />} />
+          <Route path="settings" element={<SettingsStudent />} />
         </Route>
       </Route>
 
