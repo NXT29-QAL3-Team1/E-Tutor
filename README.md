@@ -28,7 +28,7 @@ Users can create accounts, purchase courses online, and watch video lessons secu
   <img src="https://skillicons.dev/icons?i=mui" width="55" alt="mui"/>
   <img src="https://skillicons.dev/icons?i=bootstrap" width="55" alt="bootstrap"/>
   <img src="https://cdn.simpleicons.org/axios/5A29E4" width="55" alt="axios"/>
-  
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg" width="50" alt="gsap"/>
 
 </p>
 
@@ -37,6 +37,7 @@ Users can create accounts, purchase courses online, and watch video lessons secu
 - **Material UI (MUI)** → Pre-built styled components  
 - **Bootstrap** → Responsive grid & layout system  
 - **Axios** → Handling REST API requests  
+- **GSAP** → For Smooth Animations  
 
 ---
 
@@ -54,8 +55,7 @@ Users can create accounts, purchase courses online, and watch video lessons secu
 - **Node.js** → Server runtime  
 - **TypeScript** → Static type safety  
 - **Express.js** → REST API framework  
-- **MongoDB** → NoSQL database  
-- **Mongoose** → MongoDB data modeling  
+- **MongoDB + Mongoose** → NoSQL database / MongoDB data modeling
 - **Cloudinary** → Media storage (videos/images)  
 - **Stripe** → Secure online payments  
 - **JWT** → Authentication + protected routes  
