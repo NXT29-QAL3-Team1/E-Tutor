@@ -79,7 +79,7 @@ Users can create accounts, purchase courses online, and watch video lessons secu
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/etutor.git
+git clone https://github.com/NXT29-QAL3-Team1/E-Tutor.git
 
 # Install dependencies
 npm install
