@@ -29,6 +29,7 @@ Users can create accounts, purchase courses online, and watch video lessons secu
   <img src="https://skillicons.dev/icons?i=bootstrap" width="55" alt="bootstrap"/>
   <img src="https://cdn.simpleicons.org/axios/5A29E4" width="55" alt="axios"/>
   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg" width="50" alt="gsap"/>
+  <img src="https://uploads.sitepoint.com/wp-content/uploads/2023/09/1695906394Screenshot-2023-09-28-at-14.06.18.png" width="100" alt="nivo"/>
 
 </p>
 
@@ -36,8 +37,9 @@ Users can create accounts, purchase courses online, and watch video lessons secu
 - **Redux** → Global state management  
 - **Material UI (MUI)** → Pre-built styled components  
 - **Bootstrap** → Responsive grid & layout system  
-- **Axios** → Handling REST API requests  
+- **Axios** → Handling REST API requests
 - **GSAP** → For Smooth Animations  
+- **Nivo** → For React Charts
 
 ---
 
