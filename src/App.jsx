@@ -36,6 +36,9 @@ import SettingsStudent from './pages/studentPages/studentSettings/SettingsStuden
 // Pages (Instructor)
 // Soon
 
+// Pages (Config)
+import ContentConfigPage from './pages/config/ContentConfigPage';
+
 // Error Page
 import Error from './pages/mainPages/error/Error';
 
@@ -50,6 +53,7 @@ const router = createBrowserRouter(
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="career" element={<Career />} />
+        <Route path="config" element={<ContentConfigPage />} />
         <Route path="studentDashboard" element={<StudentDashRoot />} >
           <Route index element={<StudentDashboard />} />
           <Route path="studentCourses" element={<StudentCourses />} />
