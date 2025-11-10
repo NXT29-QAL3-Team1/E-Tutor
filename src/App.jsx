@@ -40,6 +40,9 @@ import InstructorCourses from './pages/instructorPages/instructorCourses/Instruc
 import InstructorEarning from './pages/instructorPages/instructorEarning/InstructorEarning';
 import InstructorSettings from './pages/instructorPages/instructorSettings/InstructorSettings';
 
+// Pages (Config)
+import ContentConfigPage from './pages/config/ContentConfigPage';
+
 // Error Page
 import Error from './pages/mainPages/error/Error';
 
@@ -54,6 +57,7 @@ const router = createBrowserRouter(
         <Route path="instructorInfo/:id" element={<InstructorInfo />} />
         <Route path="about" element={<About />} />
         <Route path="help" element={<Help />} />
+        <Route path="config" element={<ContentConfigPage />} />
         <Route path="studentDashboard" element={<StudentDashRoot />} >
           <Route index element={<StudentDashboard />} />
           <Route path="studentCourses" element={<StudentCourses />} />
