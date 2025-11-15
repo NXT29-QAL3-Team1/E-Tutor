@@ -1,0 +1,448 @@
+/* Global reset and body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Navbar styling */
+.etutor-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 240px;
+  background-color: #fff;
+  border-bottom: 1px solid #EBEBFF;
+}
+
+.etutor-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.etutor-logo-box img {
+  width: 30px;
+  height: 30px;
+}
+
+.etutor-logo-box h2 {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+.etutor-Create-Account {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.etutor-Create-Account span {
+  color: #6c757d;
+  font-size: 13px;
+}
+
+.etutor-Create-Account button {
+  background-color: #fff2ec;
+  color: #ff6b3d;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.etutor-Create-Account button:hover {
+  background-color: #ffe6dc;
+}
+
+/* Main layout container */
+.signup-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Left section with illustration */
+.left-section {
+  background: #EBEBFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 16px;
+  text-align: center;
+  width: 600px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -26px;
+  left: 15px;
+}
+
+/* Right section with form */
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 48px;
+}
+
+.form-container {
+  max-width: 440px;
+  width: 100%;
+}
+
+.sign-in-title {
+  font-size: 30px;
+  font-weight: 640;
+  color: #1a1a1a;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+/* Form inputs styling */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 18px 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15.5px;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  color: #374151;
+  position: relative;
+  z-index: 1;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #f97316;
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.1);
+}
+
+.form-group label {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Password input with toggle */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 18px 50px 18px 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15.5px;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  color: #374151;
+  box-sizing: border-box;
+}
+
+.password-wrapper input:focus {
+  outline: none;
+  border-color: #f97316;
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.1);
+}
+
+.toggle-password {
+  position: absolute;
+  right: -400px;
+  top: -30px;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.toggle-password svg {
+  font-size: 22px;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-textfield-decoration-container,
+input[type="password"]::-webkit-clear-button {
+  display: none !important;
+}
+
+/* Checkbox and button row */
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.terms-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.terms-text input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #f97316;
+  cursor: pointer;
+  margin: 0;
+  vertical-align: middle;
+  appearance: none;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+}
+
+.terms-text input[type="checkbox"]:checked {
+  background: #f97316;
+  border-color: #f97316;
+}
+
+.terms-text input[type="checkbox"]:checked::before {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.terms-text label {
+  font-size: 12px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+/* Sign-in button styling */
+.sign-in-btn {
+  padding: 10px 22px;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 100px;
+}
+
+.sign-in-btn .sign-in-text {
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.sign-in-btn .arrow-icon {
+  opacity: 0;
+  font-size: 18px;
+  transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.sign-in-btn:hover {
+  background: #e76b14;
+}
+
+.sign-in-btn:hover .sign-in-text {
+  opacity: 0;
+}
+
+.sign-in-btn:hover .arrow-icon {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+/* Divider styling */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #9ca3af;
+  margin: 0 10px;
+}
+
+/* Social media buttons */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  border-color: #d1d5db;
+  background: #f9fafb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive design for screens up to 1024px */
+@media (max-width: 1024px) {
+  .signup-container {
+    grid-template-columns: 1fr;
+    height: calc(100vh - 70px);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-section {
+    display: none;
+  }
+
+  .right-section {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: #fff;
+  }
+
+  .form-container {
+    max-width: 460px;
+    width: 100%;
+  }
+
+  .etutor-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #EBEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    z-index: 10;
+  }
+
+  body {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+}
+
+/* Responsive design for screens up to 640px */
+@media (max-width: 640px) {
+  .etutor-navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 20px;
+    text-align: center;
+  }
+
+  .etutor-logo-box h2 {
+    font-size: 20px;
+  }
+
+  .form-container {
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .sign-in-title {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .social-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  .toggle-password {
+    right: -300px;
+    top: -27px;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+  }
+
+  .password-wrapper input {
+    padding: 16px 45px 16px 16px;
+    font-size: 15px;
+  }
+}
