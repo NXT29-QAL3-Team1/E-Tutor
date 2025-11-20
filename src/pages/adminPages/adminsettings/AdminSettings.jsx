@@ -35,7 +35,7 @@ export default function AdminSettings() {
       {/* Change Password */}
       <ChangePassword />
 
-      {/* Account Info */}
+      {/* Account Infoo */}
       <AccountInformation />
     </Box>
   );
