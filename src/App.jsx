@@ -26,6 +26,7 @@ import About from './pages/mainPages/about/About';
 import Help from './pages/mainPages/help/Help';
 import InstructorInfo from './pages/mainPages/instructorInfo/InstructorInfo';
 import CourseContent from './pages/mainPages/courseContent/CourseContent';
+import CoursesCart from './pages/mainPages/coursesCart/CoursesCart';
 
 // Pages (Student)
 import StudentDashboard from './pages/studentPages/studentDashboard/StudentDashboard';
@@ -54,6 +55,7 @@ const router = createBrowserRouter(
         <Route path="courses" element={<Courses />} />
         <Route path="courses/:id" element={<CourseDetails />} />
         <Route path="courses/:id/content" element={<CourseContent />} />
+        <Route path="coursesCart" element={<CoursesCart />} />
         <Route path="instructorInfo/:id" element={<InstructorInfo />} />
         <Route path="about" element={<About />} />
         <Route path="help" element={<Help />} />
