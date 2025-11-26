@@ -24,7 +24,6 @@ Users can create accounts, purchase courses online, and watch video lessons secu
 ### 🔹 Frontend
 <p align="left">
   <img src="https://skillicons.dev/icons?i=react" width="55" alt="react"/>
-  <img src="https://skillicons.dev/icons?i=redux" width="55" alt="redux"/>
   <img src="https://skillicons.dev/icons?i=mui" width="55" alt="mui"/>
   <img src="https://skillicons.dev/icons?i=bootstrap" width="55" alt="bootstrap"/>
   <img src="https://cdn.simpleicons.org/axios/5A29E4" width="55" alt="axios"/>
@@ -34,7 +33,6 @@ Users can create accounts, purchase courses online, and watch video lessons secu
 </p>
 
 - **React** → For building components  
-- **Redux** → Global state management  
 - **Material UI (MUI)** → Pre-built styled components  
 - **Bootstrap** → Responsive grid & layout system  
 - **Axios** → Handling REST API requests
@@ -50,7 +48,6 @@ Users can create accounts, purchase courses online, and watch video lessons secu
   <img src="https://skillicons.dev/icons?i=express" width="55" alt="express"/>
   <img src="https://skillicons.dev/icons?i=mongodb" width="55" alt="mongodb"/>
   <img src="https://avatars.githubusercontent.com/u/1460763?s=280&v=4" width="55" alt="cloudinary"/>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsX675RaIlDiVX-sq6caKYdthgagxcvGn88TquUfvua4xgEYj0Xo0ulZJIzts0quwS_N0&usqp=CAU" width="55" alt="stripe"/>
   <img src="https://cdn.worldvectorlogo.com/logos/jwt-3.svg" width="55" alt="jwt"/>
 </p>
 
@@ -59,7 +56,6 @@ Users can create accounts, purchase courses online, and watch video lessons secu
 - **Express.js** → REST API framework  
 - **MongoDB + Mongoose** → NoSQL database / MongoDB data modeling
 - **Cloudinary** → Media storage (videos/images)  
-- **Stripe** → Secure online payments  
 - **JWT** → Authentication + protected routes  
 
 ---
