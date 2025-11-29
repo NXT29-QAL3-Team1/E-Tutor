@@ -73,14 +73,33 @@ Users can create accounts, purchase courses online, and watch video lessons secu
 
 ---
 
-## 🛠️ Installation & Run Locally (only frontend for now)
+## 🛠️ Installation & Run Locally (frontend) 
 
 ```bash
 # Clone the repo
 git clone https://github.com/NXT29-QAL3-Team1/E-Tutor.git
 
+# Go to frontend flie
+cd frontend
+
 # Install dependencies
 npm install
 
 # Run frontend
+npm run dev
+
+---
+```
+
+## 🛠️ Installation & Run Locally (backend)
+
+```bash
+
+# Install dependencies
+npm install
+
+# Go to backend flie
+cd backend
+
+# Run backend
 npm run dev
