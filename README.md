@@ -3,7 +3,7 @@
 A modern open-source e-learning platform inspired by Udemy — connecting instructors and students of all ages.  
 Users can create accounts, purchase courses online, and watch video lessons securely through an interactive learning experience.
 
-🚧 **Status:** In development  
+**Status:** : Completed ✅ 
 
 ---
 
