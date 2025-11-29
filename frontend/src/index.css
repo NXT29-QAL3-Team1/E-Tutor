@@ -1,0 +1,39 @@
+/* start variables */
+:root {
+    --main-transition: 0.3s;
+    --grey-900: #1D2026;
+    --grey-600: #6E7485;
+    --grey-500: #8C94A3;
+    --grey-100: #E9EAF0;
+    --white: #FFFFFF;
+    --primary-main: #FE7134;
+}
+
+/* end variables */
+
+/* start general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--grey-100);
+}
+
+h1 {
+    margin: 0;
+}
+
+/* end general styling */
+
+/* .app {
+    height: 10000px;
+} */
