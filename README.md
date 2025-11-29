@@ -101,5 +101,8 @@ npm install
 # Go to backend flie
 cd backend
 
+# Install dependencies
+npm install
+
 # Run backend
 npm run dev
