@@ -1,0 +1,4 @@
+.activeListItem {
+    background-color: var(--primary-main);
+    color: white;
+}

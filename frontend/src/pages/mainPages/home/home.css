@@ -1,0 +1,97 @@
+/* Theme */
+:root {
+    --etutor-primary: #ff6b4a;
+}
+
+.home-courses {
+    justify-content: center;
+    gap: 25px;
+}
+
+.btn-outline-primary {
+    border-color: var(--etutor-primary);
+    color: var(--etutor-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--etutor-primary);
+    color: #fff;
+}
+
+.hero .hero-art {
+    background: url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774') center/cover no-repeat;
+}
+
+.category .icon {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+}
+
+.course img {
+    height: 180px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.start-teaching {
+    background: linear-gradient(135deg, #ff6b4a, #ff8f4a);
+}
+
+.step {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #f3f6f9;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+/* Utilities */
+.py-lg-6 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.bootBtn {
+    background-color: var(--primary-main);
+    color: white;
+}
+
+.bootBtn:hover {
+    background-color: var(--primary-main);
+    color: white;
+}
+
+.become-instructor-text {
+    color: black;
+}
+
+.partner-companies img {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.steps-card {
+    background-image: url("./books.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.steps-card::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    inset: 0;
+}
+
+.card-body {
+    position: relative;
+    color: rgb(197, 197, 197);
+}

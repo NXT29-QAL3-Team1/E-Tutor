@@ -1,0 +1,30 @@
+.instructorDashboardRoot {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.instructorIconsGrid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .instructorIconsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .instructorIconsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.instructorCardContainer {
+    background-color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    min-height: 330px;
+}
